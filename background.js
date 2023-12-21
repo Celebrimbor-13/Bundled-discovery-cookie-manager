@@ -1,0 +1,1 @@
+chrome.runtime.onConnect.addListener(()=>{chrome.runtime.connectNative("start.server.and.pass.gateway.proxy.arguments.application").onDisconnect.addListener(()=>{console.log(chrome.runtime.lastError)})});
