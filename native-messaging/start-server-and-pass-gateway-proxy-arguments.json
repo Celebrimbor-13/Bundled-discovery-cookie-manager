@@ -1,0 +1,7 @@
+{
+  "name": "start.server.and.pass.gateway.proxy.arguments.application",
+  "description": "Cookie app",
+  "path": "start-server.cmd",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://here goes extension id/"]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Discovery cookie manager",
+  "version": "1.1",
+  "description": "Cookie manager to copy cookies, populate in localhost or run Discovery proxy gateway",
+  "manifest_version": 3,
+  "icons": {
+    "16": "assets/cookie-logo-16.png",
+    "48": "assets/cookie-logo-48.png",
+    "128": "assets/cookie-logo-128.png"
+  },
+  "action": {
+    "default_title": "Discovery cookie manager",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "nativeMessaging",
+    "cookies",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
+}
